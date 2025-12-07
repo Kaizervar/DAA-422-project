@@ -1,0 +1,25 @@
+Metric,Value,Category
+MBPP Total Tasks,374,Source Dataset
+MBPP Total Test Cases,1122,Source Dataset
+MBPP Avg Tests per Task,3.00,Source Dataset
+MBPP Avg Code Lines,6.54,Source Dataset
+CoE Total Demonstrations,10,Generated Data
+CoE Avg Trace Length,6.20,Generated Data
+CoE Avg Init Code Lines,10.90,Generated Data
+CoE Total Actions,21,Generated Data
+Repair Total Tasks,1122,Generated Data
+Repair Avg Corrupted Lines,6.57,Generated Data
+Repair Avg Tests per Task,3.00,Generated Data
+Action REPL Count,9,Action Distribution
+Action REPL Percentage,42.9,Action Distribution
+Action DELL Count,8,Action Distribution
+Action DELL Percentage,38.1,Action Distribution
+Action ADDL Count,4,Action Distribution
+Action ADDL Percentage,19.0,Action Distribution
+Corruption Delete Count,469,Corruption Patterns
+Corruption Delete Percentage,41.8,Corruption Patterns
+Corruption Add Count,466,Corruption Patterns
+Corruption Add Percentage,41.5,Corruption Patterns
+Corruption Replace Count,187,Corruption Patterns
+Corruption Replace Percentage,16.7,Corruption Patterns
+

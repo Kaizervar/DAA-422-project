@@ -1,0 +1,70 @@
+% Dataset Statistics Table
+\begin{table}[h]
+\centering
+\caption{Dataset Statistics for Chain-of-Edits Code Repair}
+\label{tab:dataset_stats}
+\begin{tabular}{lrrr}
+\toprule
+Dataset & Tasks & Avg. Size & Description \\
+\midrule
+MBPP Training & 374 & 6.5 lines & Original programming tasks \\
+CoE Demonstrations & 10 & 6.2 steps & Synthetic repair traces \\
+Repair Tasks & 1,122 & 6.6 lines & Corrupted code for repair \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Action Distribution Table
+\begin{table}[h]
+\centering
+\caption{Distribution of DSL Actions in CoE Demonstrations}
+\label{tab:action_distribution}
+\begin{tabular}{lrr}
+\toprule
+Action Type & Count & Percentage \\
+\midrule
+REPL (Replace Line) & 9 & 42.9\% \\
+DELL (Delete Line) & 8 & 38.1\% \\
+ADDL (Add Line) & 4 & 19.0\% \\
+REPW (Replace Word) & 0 & 0.0\% \\
+\midrule
+Total Actions & 21 & 100\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Environment Test Results
+\begin{table}[h]
+\centering
+\caption{Environment Functionality Test Results}
+\label{tab:env_tests}
+\begin{tabular}{llll}
+\toprule
+Test Case & Initial State & After Fix & Actions \\
+\midrule
+Simple addition fix & Failed & Passed & 1 \\
+Multiplication fix & Failed & Passed & 1 \\
+Delete extra line & Failed & Passed & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Dataset Generation Statistics
+\begin{table}[h]
+\centering
+\caption{Data Generation Statistics}
+\label{tab:generation_stats}
+\begin{tabular}{lrr}
+\toprule
+Metric & Value & Description \\
+\midrule
+MBPP Test Cases & 1,122 & Total test assertions \\
+Avg. Tests per Task & 3.00 & Average test coverage \\
+Corruption Patterns & & \\
+\quad Delete operations & 469 (41.8\%) & Lines removed \\
+\quad Add operations & 466 (41.5\%) & Lines added \\
+\quad Replace operations & 187 (16.7\%) & Lines replaced \\
+\bottomrule
+\end{tabular}
+\end{table}
+
